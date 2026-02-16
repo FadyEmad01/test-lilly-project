@@ -180,7 +180,7 @@
 // ]
 
 
-import { POSTS } from "@/types/POSTS";
+import { POSTS } from "@/types/post";
 
 export const CARDS_POSTS: POSTS[] = [
   {

@@ -199,7 +199,7 @@
 
 import { Play, Eye } from "lucide-react"
 import MediaDisplay from "./media-display"
-import { POSTS } from "@/types/POSTS"
+import { POSTS } from "@/types/post"
 import { getBackgroundClassName, getBackgroundStyle } from "@/util/color-utils"
 
 interface CardProps {

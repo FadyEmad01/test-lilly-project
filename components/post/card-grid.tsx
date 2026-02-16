@@ -1,6 +1,6 @@
 "use client"
 
-import { POSTS } from "@/types/POSTS"
+import { POSTS } from "@/types/post"
 import { useState } from "react"
 import Card from "./card"
 import PostModal from "./post-modal"

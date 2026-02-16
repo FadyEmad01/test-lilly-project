@@ -21,6 +21,7 @@
   --accent: oklch(0.274 0.006 286.033);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.552 0.016 285.938);
@@ -37,6 +38,25 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
+
+
+  /* Quiz Feedback Colors - Works on both pink and green backgrounds */
+  --quiz-correct: oklch(0.45 0.15 155);
+  --quiz-correct-light: oklch(0.92 0.05 155);
+  --quiz-correct-border: oklch(0.4 0.18 155);
+  
+  --quiz-incorrect: oklch(0.5 0.18 25);
+  --quiz-incorrect-light: oklch(0.92 0.06 25);
+  --quiz-incorrect-border: oklch(0.45 0.2 25);
+  
+  /* Alternative - More vibrant */
+  --quiz-success: #1a7f5a;
+  --quiz-success-bg: #d1fae5;
+  --quiz-success-border: #047857;
+  
+  --quiz-error: #b91c1c;
+  --quiz-error-bg: #fee2e2;
+  --quiz-error-border: #dc2626;
 }
 
 .dark {
@@ -55,6 +75,7 @@
   --accent: oklch(0.274 0.006 286.033);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(1 0 0 / 10%);
   --input: oklch(1 0 0 / 15%);
   --ring: oklch(0.552 0.016 285.938);
@@ -71,6 +92,25 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
+
+
+  /* Quiz Feedback Colors - Works on both pink and green backgrounds */
+  --quiz-correct: oklch(0.45 0.15 155);
+  --quiz-correct-light: oklch(0.92 0.05 155);
+  --quiz-correct-border: oklch(0.4 0.18 155);
+  
+  --quiz-incorrect: oklch(0.5 0.18 25);
+  --quiz-incorrect-light: oklch(0.92 0.06 25);
+  --quiz-incorrect-border: oklch(0.45 0.2 25);
+  
+  /* Alternative - More vibrant */
+  --quiz-success: #1a7f5a;
+  --quiz-success-bg: #d1fae5;
+  --quiz-success-border: #047857;
+  
+  --quiz-error: #b91c1c;
+  --quiz-error-bg: #fee2e2;
+  --quiz-error-border: #dc2626;
 }
 
 @theme inline {
@@ -114,6 +154,26 @@
   --radius-2xl: calc(var(--radius) + 8px);
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
+  
+  --font-sans: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+
+
+  /* Quiz colors */
+  --color-quiz-pink: var(--quiz-pink);
+  --color-quiz-green: var(--quiz-green);
+  --color-quiz-correct: var(--quiz-correct);
+  --color-quiz-correct-light: var(--quiz-correct-light);
+  --color-quiz-correct-border: var(--quiz-correct-border);
+  --color-quiz-incorrect: var(--quiz-incorrect);
+  --color-quiz-incorrect-light: var(--quiz-incorrect-light);
+  --color-quiz-incorrect-border: var(--quiz-incorrect-border);
+  --color-quiz-success: var(--quiz-success);
+  --color-quiz-success-bg: var(--quiz-success-bg);
+  --color-quiz-success-border: var(--quiz-success-border);
+  --color-quiz-error: var(--quiz-error);
+  --color-quiz-error-bg: var(--quiz-error-bg);
+  --color-quiz-error-border: var(--quiz-error-border);
 }
 
 @layer base {
