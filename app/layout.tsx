@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../styles/globals.css";
 import LenisProvider from "@/components/provider/LenisProvider";
+import { ChatWidget } from "@/components/chat/ChatWidget";
+import { ChatProvider } from "@/context/ChatContext";
+import { ChatWidgetWithContext } from "@/components/chat/ChatWidgetWithContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +35,12 @@ export default function RootLayout({
         <LenisProvider>
           {children}
         </LenisProvider>
+        <ChatWidget
+          data-lenis-prevent
+          title="Chat Support"
+          subtitle="We typically reply within minutes"
+          accentColor="#00bbff"
+        />
       </body>
     </html>
   );

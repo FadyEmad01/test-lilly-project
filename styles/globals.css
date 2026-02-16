@@ -196,3 +196,110 @@
 *::-webkit-scrollbar {
   display: none;
 }
+
+
+/* iOS-style message bubbles */
+.imessage-bubble {
+  word-wrap: break-word;
+  line-height: 24px;
+  position: relative;
+  padding: 10px 16px;
+  max-width: 85%;
+  border-radius: 18px;
+}
+
+.imessage-bubble::before,
+.imessage-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 18px;
+}
+
+/* Bot messages (from-them style) */
+.imessage-from-them {
+  background: #27272a;
+  color: white;
+  align-self: flex-start;
+}
+
+.imessage-from-them::before {
+  left: -7px;
+  width: 20px;
+  background-color: #27272a;
+  border-bottom-right-radius: 16px;
+}
+
+.imessage-from-them::after {
+  left: -26px;
+  width: 26px;
+  background-color: var(--chat-bg, #000);
+  border-bottom-right-radius: 10px;
+}
+
+/* User messages (from-me style) */
+.imessage-from-me {
+  color: black;
+  background: #00bbff;
+  align-self: flex-end;
+}
+
+.imessage-from-me::before {
+  right: -7px;
+  width: 20px;
+  background-color: #00bbff;
+  border-bottom-left-radius: 16px 14px;
+}
+
+.imessage-from-me::after {
+  right: -26px;
+  width: 26px;
+  background-color: var(--chat-bg, #000);
+  border-bottom-left-radius: 10px;
+}
+
+/* Grouped iMessage bubbles */
+.imessage-grouped-first::before,
+.imessage-grouped-first::after,
+.imessage-grouped-middle::before,
+.imessage-grouped-middle::after {
+  display: none;
+}
+
+.imessage-grouped-first {
+  border-radius: 18px 18px 18px 18px !important;
+}
+
+.imessage-grouped-middle {
+  border-radius: 18px 18px 18px 18px !important;
+}
+
+.imessage-grouped-last {
+  border-radius: 18px 18px 18px 18px !important;
+}
+
+/* From-them grouped corners */
+.imessage-from-them.imessage-grouped-first {
+  border-radius: 18px 18px 18px 5px !important;
+}
+
+.imessage-from-them.imessage-grouped-middle {
+  border-radius: 5px 18px 18px 5px !important;
+}
+
+.imessage-from-them.imessage-grouped-last {
+  border-radius: 5px 18px 18px 18px !important;
+}
+
+/* From-me grouped corners */
+.imessage-from-me.imessage-grouped-first {
+  border-radius: 18px 18px 5px 18px !important;
+}
+
+.imessage-from-me.imessage-grouped-middle {
+  border-radius: 18px 5px 5px 18px !important;
+}
+
+.imessage-from-me.imessage-grouped-last {
+  border-radius: 18px 5px 18px 18px !important;
+}
