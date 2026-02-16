@@ -176,6 +176,99 @@ const EyeBall = ({
   );
 };
 
+// Graduation Cap Component
+const GraduationCap = ({ color = "#2D2D2D" }: { color?: string }) => {
+  return (
+    <div
+      className="absolute"
+      style={{
+        left: '50%',
+        top: '-25px',
+        transform: 'translateX(-50%)',
+        zIndex: 10,
+      }}
+    >
+      {/* Mortarboard (flat square top) */}
+      <div
+        style={{
+          width: '100px',
+          height: '8px',
+          backgroundColor: color,
+          position: 'absolute',
+          left: '50%',
+          transform: 'translateX(-50%) perspective(100px) rotateX(20deg)',
+          borderRadius: '2px',
+        }}
+      />
+
+      {/* Cap base (the part that sits on head) */}
+      <div
+        style={{
+          width: '70px',
+          height: '25px',
+          backgroundColor: color,
+          position: 'absolute',
+          left: '50%',
+          top: '8px',
+          transform: 'translateX(-50%)',
+          borderRadius: '4px 4px 2px 2px',
+          clipPath: 'polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%)',
+        }}
+      />
+
+      {/* Tassel */}
+      <div
+        className="absolute"
+        style={{
+          left: '50%',
+          top: '4px',
+          transform: 'translateX(-50%)',
+        }}
+      >
+        {/* Tassel button */}
+        <div
+          style={{
+            width: '8px',
+            height: '8px',
+            backgroundColor: '#FFD700',
+            borderRadius: '50%',
+            position: 'absolute',
+            left: '50%',
+            transform: 'translateX(-50%)',
+          }}
+        />
+
+        {/* Tassel cord */}
+        <div
+          style={{
+            width: '2px',
+            height: '20px',
+            backgroundColor: '#FFD700',
+            position: 'absolute',
+            left: '50%',
+            top: '6px',
+            transform: 'translateX(-50%)',
+          }}
+        />
+
+        {/* Tassel fringe */}
+        <div
+          style={{
+            width: '12px',
+            height: '10px',
+            background: 'linear-gradient(to bottom, #FFD700, #FFA500)',
+            position: 'absolute',
+            left: '50%',
+            top: '24px',
+            transform: 'translateX(-50%)',
+            borderRadius: '0 0 3px 3px',
+          }}
+        />
+      </div>
+    </div>
+  );
+};
+
 // AnimatedLoginForm with proper callbacks
 interface AnimatedLoginFormProps extends Omit<React.ComponentProps<"form">, 'onSubmit'> {
   onTyping: (isTyping: boolean) => void;
@@ -506,7 +599,7 @@ function LoginPage() {
           {/* Cartoon Characters */}
           <div className="relative" style={{ width: '550px', height: '400px' }}>
 
-            {/* Purple tall rectangle character - Back layer */}
+            {/* Purple tall rectangle character with graduation cap - Back layer */}
             <div
               ref={purpleRef}
               className="absolute bottom-0 transition-all duration-700 ease-in-out"
@@ -525,6 +618,9 @@ function LoginPage() {
                 transformOrigin: 'bottom center',
               }}
             >
+              {/* Graduation Cap */}
+              <GraduationCap color="#2D2D2D" />
+
               {/* Eyes */}
               <div
                 className="absolute flex gap-8 transition-all duration-700 ease-in-out"
@@ -577,6 +673,10 @@ function LoginPage() {
                 transformOrigin: 'bottom center',
               }}
             >
+
+              {/* Graduation Cap */}
+              <GraduationCap color="#2D2D2D" />
+
               {/* Eyes */}
               <div
                 className="absolute flex gap-6 transition-all duration-700 ease-in-out"
@@ -623,6 +723,10 @@ function LoginPage() {
                 transformOrigin: 'bottom center',
               }}
             >
+
+              {/* Graduation Cap */}
+              <GraduationCap color="#2D2D2D" />
+
               {/* Eyes - just pupils, no white */}
               <div
                 className="absolute flex gap-8 transition-all duration-200 ease-out"
@@ -663,6 +767,10 @@ function LoginPage() {
                 transformOrigin: 'bottom center',
               }}
             >
+
+              {/* Graduation Cap */}
+              <GraduationCap color="#2D2D2D" />
+
               {/* Eyes - just pupils, no white */}
               <div
                 className="absolute flex gap-6 transition-all duration-200 ease-out"
