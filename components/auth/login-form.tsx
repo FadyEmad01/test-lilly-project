@@ -660,7 +660,7 @@ function LoginPage() {
                 left: '240px',
                 width: '120px',
                 height: '310px',
-                backgroundColor: '#2D2D2D',
+                backgroundColor: '#F57799',
                 borderRadius: '8px 8px 0 0',
                 zIndex: 2,
                 transform: isPasswordVisible
@@ -717,7 +717,7 @@ function LoginPage() {
                 width: '240px',
                 height: '200px',
                 zIndex: 3,
-                backgroundColor: '#FF9B6B',
+                backgroundColor: '#FB9B8F',
                 borderRadius: '120px 120px 0 0',
                 transform: isPasswordVisible ? `skewX(0deg)` : `skewX(${orangePos.bodySkew || 0}deg)`,
                 transformOrigin: 'bottom center',
