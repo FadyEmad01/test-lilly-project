@@ -198,8 +198,7 @@ The Meatpacking District Management Association (Meatpacking BID) led the projec
     // Replace this URL with your local image: "/images/west-14th.jpg"
     heroImage: "/images/p1.jpg",
     media: [
-      { type: "image", url: "/images/p2.jpg" },
-      { type: "image", url: "/images/p2.jpg" },
+      { type: "pdf", url: "/pdf/PPT-1-CAREER-PATHS.pdf" },
     ],
     tags: ["URBAN DESIGN asdasdadad", "PUBLIC SPACE"],
     backgroundColor: "#F57799",
@@ -241,6 +240,9 @@ From July 11 - 13, in celebration of West Side Fest and Hopper's 143rd birthday,
       where: "The West 14th Street Promenade + Gansevoort Landing",
     },
     externalUrl: "https://www.whitney.org",
+     media: [
+      { type: "pdf", url: "/pdf/PPT-2-CAREER-PATHS.pdf" },
+    ],
   },
   {
     id: "3",
@@ -260,6 +262,9 @@ From July 11 - 13, in celebration of West Side Fest and Hopper's 143rd birthday,
     socialLinks: [
       { label: "VIEW ON TIKTOK", url: "https://tiktok.com", platform: "tiktok" },
     ],
+     media: [
+      { type: "pdf", url: "/pdf/PPT-3-CAREER-PATHS.pdf" },
+    ],
   },
   {
     id: "4",
@@ -274,6 +279,9 @@ From July 11 - 13, in celebration of West Side Fest and Hopper's 143rd birthday,
     cardType: "post",
     size: "small",
     heroImage: "",
+     media: [
+      { type: "pdf", url: "/pdf/PPT-4-CAREER-PATHS.pdf" },
+    ],
   },
   {
     id: "5",
@@ -294,6 +302,9 @@ Judy discusses her journey from a small pop-up on 13th Street to becoming a stap
     cardType: "post",
     size: "small",
     externalUrl: "https://www.meatpacking-district.com",
+     media: [
+      { type: "pdf", url: "/pdf/PPT-5-CAREER-PATHS.pdf" },
+    ],
   },
   {
     id: "6",
@@ -309,8 +320,8 @@ Judy discusses her journey from a small pop-up on 13th Street to becoming a stap
     backgroundColor: "#A5C89E",
     cardType: "post",
     size: "large",
-    media: [
-       { type: "image", url: "/images/p3.jpg" }
-    ]
+     media: [
+      { type: "pdf", url: "/pdf/PPT-6-CAREER-PATHS.pdf" },
+    ],
   }
 ];
