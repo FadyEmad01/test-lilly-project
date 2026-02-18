@@ -1,6 +1,6 @@
 import { CareerQuiz } from "@/components/quiz/CareerQuiz";
 import { Quiz } from "@/components/quiz/Quiz";
-import { careerQuestions } from "@/constants/career-questions";
+import { careerQuestions } from "@/constants/CAREER-QUESTIONS";
 import { sampleQuestions } from "@/constants/QUESTIONS";
 
 export default function page() {

@@ -6,7 +6,8 @@ import MediaDisplay from "./media-display"
 // import Autoplay from "embla-carousel-autoplay"
 
 interface MediaItem {
-  type: "image" | "video"
+  // type: "image" | "video"
+  type: "image" | "video" | "pdf" | "pptx" | "document";
   url: string
   thumbnail?: string
 }

@@ -131,14 +131,14 @@ const OptionButton = ({
                  ${disabled && !showResult ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}`}
       style={styles}
     >
-      <span 
+      <span
         className={`flex items-center justify-center w-10 h-10 rounded-lg text-sm font-bold uppercase
                    border transition-colors`}
         style={{
-          borderColor: showResult && isCorrect 
-            ? quizColorsHex.correct.border 
-            : showResult && isWrong 
-              ? quizColorsHex.incorrect.border 
+          borderColor: showResult && isCorrect
+            ? quizColorsHex.correct.border
+            : showResult && isWrong
+              ? quizColorsHex.incorrect.border
               : 'black',
           backgroundColor: isSelected ? 'black' : 'transparent',
           color: isSelected ? 'white' : 'black',
@@ -183,18 +183,18 @@ const Timer = ({ timeRemaining, bgColor }: { timeRemaining: number; bgColor: str
 
   const getTimerStyles = () => {
     if (isCritical) {
-      return { 
+      return {
         backgroundColor: quizColorsHex.incorrect.bg,
         color: quizColorsHex.incorrect.text,
       };
     }
     if (isWarning) {
-      return { 
+      return {
         backgroundColor: '#fef3c7', // amber-100
         color: '#92400e', // amber-800
       };
     }
-    return { 
+    return {
       backgroundColor: bgColor,
       color: 'black',
     };
@@ -210,7 +210,7 @@ const Timer = ({ timeRemaining, bgColor }: { timeRemaining: number; bgColor: str
       style={{ backgroundColor: timerStyles.backgroundColor }}
     >
       <Clock className="w-4 h-4" style={{ color: timerStyles.color }} />
-      <span 
+      <span
         className="text-sm font-mono font-bold uppercase"
         style={{ color: timerStyles.color }}
       >
@@ -244,16 +244,16 @@ const NavigationPill = ({
     }
     if (answer && mode === 'instant-feedback') {
       return {
-        backgroundColor: answer.isCorrect 
-          ? quizColorsHex.answered.correct 
+        backgroundColor: answer.isCorrect
+          ? quizColorsHex.answered.correct
           : quizColorsHex.answered.incorrect,
         color: 'black',
       };
     }
     if (answer) {
-      return { 
-        backgroundColor: quizColorsHex.answered.neutral, 
-        color: 'black' 
+      return {
+        backgroundColor: quizColorsHex.answered.neutral,
+        color: 'black'
       };
     }
     return { backgroundColor: bgColor, color: 'black' };
@@ -291,7 +291,7 @@ export function QuizModal({
   const lenisRef = useRef<Lenis | null>(null);
   const completedRef = useRef(false);
   const rafIdRef = useRef<number | null>(null);
-  
+
   const {
     currentQuestion,
     currentQuestionIndex,
@@ -311,6 +311,7 @@ export function QuizModal({
     questions,
     mode: config.mode,
     timeLimit,
+    type: "personality"
   });
 
   // Lenis smooth scroll setup
@@ -471,7 +472,7 @@ export function QuizModal({
                       className="flex gap-x-1 flex-wrap gap-y-2"
                     >
                       <Timer timeRemaining={timeRemaining} bgColor={config.color} />
-                      
+
                       <span
                         className="text-black border-black border border-solid rounded-full px-3 h-9 
                                    flex justify-center items-center text-xs font-medium uppercase"
@@ -479,7 +480,7 @@ export function QuizModal({
                       >
                         {currentQuestionIndex + 1} / {totalQuestions}
                       </span>
-                      
+
                       <span
                         className="text-black border-black border border-solid rounded-full px-3 h-9 
                                    flex justify-center items-center text-xs font-medium uppercase"
@@ -582,18 +583,18 @@ export function QuizModal({
                               transition={{ duration: 0.3 }}
                               className="overflow-hidden"
                             >
-                              <div 
+                              <div
                                 className="p-4 rounded-xl border"
                                 style={{
-                                  backgroundColor: currentAnswer?.isCorrect 
-                                    ? `${quizColorsHex.correct.bg}80` 
+                                  backgroundColor: currentAnswer?.isCorrect
+                                    ? `${quizColorsHex.correct.bg}80`
                                     : `${quizColorsHex.incorrect.bg}80`,
                                   borderColor: currentAnswer?.isCorrect
                                     ? quizColorsHex.correct.border
                                     : quizColorsHex.incorrect.border,
                                 }}
                               >
-                                <p 
+                                <p
                                   className="text-sm font-bold uppercase mb-2"
                                   style={{
                                     color: currentAnswer?.isCorrect
@@ -627,8 +628,8 @@ export function QuizModal({
                         onClick={goToPrevious}
                         disabled={currentQuestionIndex === 0}
                       />
-                      <TagButton 
-                        bgColor={config.color} 
+                      <TagButton
+                        bgColor={config.color}
                         onClick={goToPrevious}
                         disabled={currentQuestionIndex === 0}
                       >
@@ -644,8 +645,8 @@ export function QuizModal({
                         </TagButton>
                       ) : (
                         <>
-                          <TagButton 
-                            bgColor={config.color} 
+                          <TagButton
+                            bgColor={config.color}
                             onClick={goToNext}
                             disabled={isLastQuestion}
                           >
