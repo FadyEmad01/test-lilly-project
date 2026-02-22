@@ -94,7 +94,7 @@ export const CARDS_POSTS: POSTS[] = [
     size: "small",
     heroImage: "",
     media: [
-      { type: "pdf", url: "/pdf/PPT-4-CAREER-PATHS-LK.pdf" },
+      { type: "pdf", url: "/pdf/PPT4-CAREER-PATHS-LK.pdf" },
     ],
   },
   {
@@ -135,7 +135,7 @@ This presentation is AI generated, but all of the information is thoroughly rese
     cardType: "post",
     size: "large",
     media: [
-      { type: "pdf", url: "/pdf/PPT-6-CAREER-PATHS-LK.pdf" },
+      { type: "pdf", url: "/pdf/PPT6-CAREER-PATHS-LK.pdf" },
     ],
   }
 ];
