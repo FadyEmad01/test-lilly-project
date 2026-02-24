@@ -3,29 +3,48 @@
   "short_name": "My App",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
+  "background_color": "#FCFCF5",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/icons/icon-192x192.png",
-      "sizes": "128x128",
-      "type": "image/png"
+      "rel": "icon",
+      "type": "image/ico",
+      "sizes": "32x32",
+      "url": "/favicon/favicon.ico"
     },
     {
-      "src": "/icons/icon-512x512.png",
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "96x96",
+      "url": "/favicon/favicon-96x96.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
+      "sizes": "192x192",
+      "url": "/favicon/android-chrome-192x192.png"
+    },
+    {
+      "rel": "icon",
+      "type": "image/png",
       "sizes": "512x512",
-      "type": "image/png"
+      "url": "/favicon/android-chrome-512x512.png"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "sizes": "180x180",
+      "url": "/favicon/apple-touch-icon.png"
     }
   ],
   "screenshots": [
     {
       "src": "/screenshots/screenshot-mobile.png",
-      "sizes": "502x891",
+      "sizes": "507x8961",
       "type": "image/png"
     },
     {
       "src": "/screenshots/screenshot-desktop.png",
-      "sizes": "1919x886",
+      "sizes": "1919x1079",
       "type": "image/png",
       "form_factor": "wide"
     }
