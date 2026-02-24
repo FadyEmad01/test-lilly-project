@@ -10,36 +10,36 @@
       "rel": "icon",
       "type": "image/ico",
       "sizes": "32x32",
-      "url": "/favicon/favicon.ico"
+      "src": "/favicon/favicon.ico"
     },
     {
       "rel": "icon",
       "type": "image/png",
       "sizes": "96x96",
-      "url": "/favicon/favicon-96x96.png"
+      "src": "/favicon/favicon-96x96.png"
     },
     {
       "rel": "icon",
       "type": "image/png",
       "sizes": "192x192",
-      "url": "/favicon/android-chrome-192x192.png"
+      "src": "/favicon/android-chrome-192x192.png"
     },
     {
       "rel": "icon",
       "type": "image/png",
       "sizes": "512x512",
-      "url": "/favicon/android-chrome-512x512.png"
+      "src": "/favicon/android-chrome-512x512.png"
     },
     {
       "rel": "apple-touch-icon",
       "sizes": "180x180",
-      "url": "/favicon/apple-touch-icon.png"
+      "src": "/favicon/apple-touch-icon.png"
     }
   ],
   "screenshots": [
     {
       "src": "/screenshots/screenshot-mobile.png",
-      "sizes": "507x8961",
+      "sizes": "507x896",
       "type": "image/png"
     },
     {
