@@ -138,7 +138,7 @@ export function ChatWidget({
         onClick={toggleChat}
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full
+        className="fixed bottom-6 right-6 z-40 w-14 h-14 rounded-full
                    flex items-center justify-center shadow-lg shadow-black/30
                    border border-white/10 transition-colors duration-300"
         style={{ backgroundColor: isOpen ? '#27272a' : accentColor }}

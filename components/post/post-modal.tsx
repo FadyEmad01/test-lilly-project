@@ -498,7 +498,7 @@ export default function PostModal({ post, isOpen, onClose, onPostClick }: PostMo
                             duration: 0.4,
                             delay: 2.1 + index * 0.1,
                           }}
-                          className="flex-shrink-0"
+                          className="flex-shrink-0 w-[325px]"
                         >
                           <Card
                             post={relatedPost}
