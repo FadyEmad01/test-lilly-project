@@ -1,6 +1,6 @@
 {
-  "name": "My Awesome App",
-  "short_name": "My App",
+  "name": "Know it!",
+  "short_name": "Know it!",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FCFCF5",
