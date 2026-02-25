@@ -13,7 +13,7 @@ export const CARDS_POSTS: POSTS[] = [
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     // Replace this URL with your local image: "/images/west-14th.jpg"
-    heroImage: "/images/p1.jpg",
+    heroImage: "/images/p1.jpeg",
     media: [
       { type: "pdf", url: "/pdf/PPT-1-CAREER-PATHS.pdf" },
     ],
@@ -38,10 +38,9 @@ export const CARDS_POSTS: POSTS[] = [
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     // Replace with local image
-    heroImage: "/images/p2.jpg",
+    heroImage: "/images/p2.jpeg",
     images: [
-      "/images/p2.jpg",
-      "/images/p2.jpg",
+      "/images/p2.jpeg",
     ],
     tags: ["ECONOMICS", "MARKETING",],
     backgroundColor: "#FB9B8F",
@@ -64,7 +63,7 @@ export const CARDS_POSTS: POSTS[] = [
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     // Replace with local image
-    heroImage: "/images/p3.jpg",
+    heroImage: "/images/p3.jpeg",
     tags: ["UNIVERSITY", "ENGINEERING"],
     backgroundColor: "#FF52A0",
     cardType: "post",
@@ -92,7 +91,7 @@ export const CARDS_POSTS: POSTS[] = [
     backgroundColor: "#B500B2",
     cardType: "post",
     size: "small",
-    heroImage: "",
+    heroImage: "/images/p4.jpeg",
     media: [
       { type: "pdf", url: "/pdf/PPT4-CAREER-PATHS-LK.pdf" },
     ],
@@ -108,7 +107,7 @@ This presentation is AI generated, but all of the information is thoroughly rese
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     // Replace with local image
-    heroImage: "/images/p1.jpg",
+    heroImage: "/images/p5.jpeg",
     tags: ["CREATIVITY"],
     backgroundColor: "#FDC3A1",
     cardType: "post",
@@ -129,7 +128,7 @@ This presentation is AI generated, but all of the information is thoroughly rese
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     // Replace with local image
-    heroImage: "/images/p1.jpg",
+    heroImage: "/images/p6.jpeg",
     tags: ["DINING", "MUSIC"],
     backgroundColor: "#A5C89E",
     cardType: "post",

@@ -15,6 +15,7 @@ import {
 import { Spinner } from "../ui/spinner";
 import { USER } from "@/constants/USER";
 import { redirect } from "next/navigation";
+import Image from "next/image";
 
 interface PupilProps {
   size?: number;
@@ -585,15 +586,15 @@ function LoginPage() {
   return (
     <div className="min-h-screen grid lg:grid-cols-2">
       {/* Left Content Section with Animations */}
-      <div className="relative hidden lg:flex flex-col justify-between bg-gradient-to-br from-primary/90 via-primary to-primary/80 p-12 text-primary-foreground">
-        {/* <div className="relative z-20">
+      <div className="relative hidden lg:flex flex-col justify-between bg-[#FFFDF5] p-12 text-primary-foreground">
+        <div className="relative z-20">
           <div className="flex items-center gap-2 text-lg font-semibold">
-            <div className="size-8 rounded-lg bg-primary-foreground/10 backdrop-blur-sm flex items-center justify-center">
-              <Sparkles className="size-4" />
+            <div className="size-16 rounded-lg flex items-center justify-center">
+              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon/web-app-manifest-192x192.png'} alt="brand logo" />
             </div>
-            <span>YourBrand</span>
+
           </div>
-        </div> */}
+        </div>
 
         <div className="relative z-20 flex items-end justify-center h-[500px]">
           {/* Cartoon Characters */}
@@ -829,10 +830,9 @@ function LoginPage() {
         <div className="w-full md:max-w-[420px] max-w-xs">
           {/* Mobile Logo */}
           <div className="lg:hidden flex items-center justify-center gap-2 text-lg font-semibold mb-12">
-            <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Sparkles className="size-4 text-primary" />
+            <div className="size-16 rounded-lg bg-primary/10 flex items-center justify-center">
+              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon/web-app-manifest-192x192.png'} alt="brand logo" />
             </div>
-            <span>YourBrand</span>
           </div>
 
           {/* Login Form with callbacks to parent */}
