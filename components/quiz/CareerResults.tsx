@@ -304,7 +304,8 @@ export function CareerResults({
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 1.0 + index * 0.03 }}
-                          className="px-3 py-1.5 rounded-full bg-black/10 border border-black/20 text-xs font-medium uppercase"
+                          // className="px-3 py-1.5 rounded-full bg-black/10 border border-black/20 text-xs font-medium uppercase"
+                          className="px-3 py-1.5 rounded-full border border-black text-xs font-medium uppercase"
                         >
                           {career}
                         </motion.span>
@@ -330,7 +331,8 @@ export function CareerResults({
                           initial={{ opacity: 0, scale: 0.8 }}
                           animate={{ opacity: 1, scale: 1 }}
                           transition={{ delay: 1.2 + index * 0.03 }}
-                          className="px-3 py-1.5 rounded-full bg-black/10 border border-black/20 text-xs font-medium uppercase"
+                          // className="px-3 py-1.5 rounded-full bg-black/10 border border-black/20 text-xs font-medium uppercase"
+                          className="px-3 py-1.5 rounded-full border border-black text-xs font-medium uppercase"
                         >
                           {major}
                         </motion.span>

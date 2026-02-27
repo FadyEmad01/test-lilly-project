@@ -226,7 +226,7 @@ const CardTitle = ({
 }
 
 const CardDescription = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-base uppercase text-ellipsis text-pretty mt-2 line-clamp-2">
+  <p className="text-base capitalize text-ellipsis text-pretty mt-2 line-clamp-2">
     {children}
   </p>
 )

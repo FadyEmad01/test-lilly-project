@@ -175,7 +175,7 @@ export default function PostModal({ post, isOpen, onClose, onPostClick }: PostMo
                           delay: 0.3,
                           ease: "easeOut",
                         }}
-                        className="text-2xl xl:text-4xl font-semibold uppercase text-ellipsis overflow-hidden line-clamp-2 text-black"
+                        className="text-2xl xl:text-4xl font-semibold uppercase text-ellipsis overflow-hidden text-black"
                       >
                         {post.title}
                       </motion.h1>

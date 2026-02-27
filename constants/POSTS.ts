@@ -88,7 +88,7 @@ export const CARDS_POSTS: POSTS[] = [
     author: "Lilly Kassem",
     publishedDate: "02.21.2026",
     tags: ["ARCHITECTURE", "INTERIOR DESIGN"],
-    backgroundColor: "#B500B2",
+    backgroundColor: "#F8F8F8",
     cardType: "post",
     size: "small",
     heroImage: "/images/p4.jpeg",
