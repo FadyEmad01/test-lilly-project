@@ -129,7 +129,7 @@ This presentation is AI generated, but all of the information is thoroughly rese
     publishedDate: "02.21.2026",
     // Replace with local image
     heroImage: "/images/p6.jpeg",
-    tags: ["DINING", "MUSIC"],
+    tags: ["MEDICINE", "PSYCHOLOGy"],
     backgroundColor: "#A5C89E",
     cardType: "post",
     size: "large",
