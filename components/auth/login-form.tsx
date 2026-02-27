@@ -590,7 +590,7 @@ function LoginPage() {
         <div className="relative z-20">
           <div className="flex items-center gap-2 text-lg font-semibold">
             <div className="size-16 rounded-lg flex items-center justify-center">
-              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon/web-app-manifest-192x192.png'} alt="brand logo" />
+              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon1/web-app-manifest-192x192.png'} alt="brand logo" />
             </div>
 
           </div>
@@ -831,7 +831,7 @@ function LoginPage() {
           {/* Mobile Logo */}
           <div className="lg:hidden flex items-center justify-center gap-2 text-lg font-semibold mb-12">
             <div className="size-16 rounded-lg bg-primary/10 flex items-center justify-center">
-              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon/web-app-manifest-192x192.png'} alt="brand logo" />
+              <Image width={192} height={192} className="w-full h-full rounded-full" src={'/favicon1/web-app-manifest-192x192.png'} alt="brand logo" />
             </div>
           </div>
 
